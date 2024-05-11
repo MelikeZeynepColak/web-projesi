@@ -1,17 +1,31 @@
 /* hsl(336, 84%, 78%)
 hsl(336, 60%, 61%)
 hsl(336, 60%, 35%)
-hsl(338, 100%, 98%) */
+hsl(338, 100%, 98%) 
+#F3A2BE #FFD3DD #F0F9F8 #C6E6E3 #81BFb7*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.arkaplan{
+    position: relative;
+    background-image: url('./arkaplan.jpg');
+    background-repeat: no-repeat;
+    z-index: -1;
+    height: 100vh;
+    background-size: cover;
 
+}
 body{
     font-family: montserrat;
 }
 nav{
-    background:  hsl(336, 84%, 78%);
+    position: absolute;
+    background: #fab5cd;
     height: 50px;
     width: 100%;
     border-radius: 20px;
-    border: 3px solid hsl(336, 60%, 61%);
+    border: 3px solid #BF567D;
 }
 nav ul{
     float: right;
