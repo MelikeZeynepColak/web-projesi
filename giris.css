@@ -3,31 +3,28 @@ hsl(336, 60%, 61%)
 hsl(336, 60%, 35%)
 hsl(338, 100%, 98%) 
 #F3A2BE #FFD3DD #F0F9F8 #C6E6E3 #81BFb7*/
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.arkaplan{
-    position: relative;
+
+body {
+    font-family: montserrat;
     background-image: url('./arkaplan.jpg');
     background-repeat: no-repeat;
-    z-index: -1;
-    height: 100vh;
     background-size: cover;
+    height: 100vh;
+}
 
-}
-body{
-    font-family: montserrat;
-}
-nav{
-    position: absolute;
+nav {
     background: #fab5cd;
     height: 50px;
     width: 100%;
     border-radius: 20px;
     border: 3px solid #BF567D;
 }
-nav ul{
+
+nav ul {
     float: right;
     margin-right: 15px;
     padding: 0;
@@ -37,27 +34,32 @@ nav ul{
     text-decoration: none;
 
 }
-nav ul li{
+
+nav ul li {
     line-height: 40px;
     margin: 0 5px;
     margin-top: 2px;
     display: inline-block;
-    
+
 }
-nav ul li a{
+
+nav ul li a {
     padding: 5px 7px;
     border-radius: 3px;
     color: hsl(338, 100%, 98%);
     font-size: 17px;
     text-decoration: none;
 }
-a.secili,a:hover{
+
+a.secili,
+a:hover {
     text-decoration: none;
     transition: .2s;
-    color:  hsl(338, 100%, 98%);
+    color: hsl(338, 100%, 98%);
     background: hsl(336, 60%, 61%);
 }
-label.baslik{
+
+label.baslik {
     color: hsl(336, 60%, 35%);
     font-size: 25px;
     margin-top: 7px;
@@ -65,33 +67,39 @@ label.baslik{
     padding: 0 80px;
     line-height: 30px;
 }
-#check{
+
+#check {
     display: none;
 }
-.checkbtn{
+
+.checkbtn {
     display: none;
     float: right;
     margin-right: 10px;
     margin-top: 5px;
     font-size: 25px;
     cursor: pointer;
-    color:  hsl(336, 60%, 35%);
+    color: hsl(336, 60%, 35%);
 }
-@media (max-width: 890px){
-    nav ul li a{
+
+@media (max-width: 940px) {
+    nav ul li a {
         font-size: 12px;
     }
-    label.baslik{
+
+    label.baslik {
         font-size: 20px;
         padding-left: 40px;
     }
 }
-@media (max-width: 700px){
-    .checkbtn{
+
+@media (max-width: 747px) {
+    .checkbtn {
         display: block;
     }
-    ul{
-        border: 3px solid  hsl(336, 84%, 78%);
+
+    ul {
+        border: 3px solid hsl(336, 84%, 78%);
         transition: all .5s;
         border-radius: 25px;
         top: 50px;
@@ -101,23 +109,32 @@ label.baslik{
         height: 100vh;
         width: 100%;
         position: fixed;
+        z-index: 1;
     }
-    nav ul li{
+
+    nav ul li {
         margin: 50px;
         line-height: 20px;
         display: block;
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 20px;
         text-decoration: none;
     }
-    a.active,a:hover{
-        color:  hsl(336, 84%, 78%);
+
+    a.active,
+    a:hover {
+        color: hsl(336, 84%, 78%);
         background: none;
         text-decoration: none;
     }
-    #check:checked ~ ul{
+
+    #check:checked~ul {
         right: 0;
     }
 }
 
+#navbar {
+    margin-top: 1px;
+}
