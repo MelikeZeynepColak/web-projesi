@@ -1,0 +1,21 @@
+#kocaeli_baslik{
+    color: #4d9288;
+    text-align: center;
+    
+}
+#genelbilgiler{
+    background-color: #4d9288;
+    color: white;
+    font-size: large;
+}
+.list-group-item{
+    background-color: #e3f0ee;
+}
+.btn{
+    background-color: #a5dbd2;
+}
+#gezilecekyerler{
+    text-align: center;
+    background-color:hsl(336, 64%, 89%);
+    color: hsl(336, 50%, 52%);
+}
