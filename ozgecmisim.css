@@ -1,0 +1,25 @@
+#solsütun{
+    background-color: hsl(336, 43%, 50%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100vh;
+}
+#resim{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin-top: 15px;
+    
+}
+#header{
+    text-align: center;
+    color: #C6E6E3;
+}
+#header h3{
+    color: #e4fffc;
+}
+#ozgecmis{
+    background-color: #C6E6E3;
+}
+

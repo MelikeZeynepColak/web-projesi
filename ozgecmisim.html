@@ -11,30 +11,101 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="giris.css" />
+    <link rel="stylesheet" href="ozgecmisim.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-      <label class="baslik">Melike Çolak</label>
-      <ul>
-        <li><a href="./index.html">Hakkımda</a></li>
-        <li><a href="./sehrim.html">Şehrim</a></li>
-        <li><a class="secili" href="./ozgecmisim.html">Özgeçmişim</a></li>
-        <li><a href="./ilgialanlarim.html">İlgi Alanlarım</a></li>
-        <li><a href="./iletisim.html">İletişim</a></li>
-        <li><a href="./login.html">Giriş Yap</a></li>
-      </ul>
-    </nav>
+    <div class="container-fluid" id="navbar">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <label class="baslik">Melike Çolak</label>
+        <ul>
+          <li><a href="./index.html">Hakkımda</a></li>
+          <li><a href="./sehrim.html">Şehrim</a></li>
+          <li><a class="secili" href="./ozgecmisim.html">Özgeçmişim</a></li>
+          <li><a href="./ilgialanlarim.html">İlgi Alanlarım</a></li>
+          <li><a href="./iletisim.html">İletişim</a></li>
+          <li><a href="./login.html">Giriş Yap</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- sol sütun -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 mt-1 ml-3" id="solsütun">
+          <!-- resim -->
+          <div class="row">
+            <div class="container-sm" id="resim">
+              <img src="" alt="" />
+            </div>
+          </div>
+          <hr />
+          <!-- başlık -->
+          <div class="row">
+            <div class="container-sm" id="header">
+              <h3>Melike Zeynep Çolak</h3>
+              <h4><a href="https://www.sakarya.edu.tr/" style="color: #C6E6E3;">Sakarya Üniversitesi</a></h4>
+              <h4><a href="https://cs.sakarya.edu.tr/" style="color: #C6E6E3;">Bilgisayar Mühendisliği</a></h4>
+            </div>
+          </div>
+          <hr />
 
-   
+        </div>
+
+        <div class="col-sm-8 mt-3">
+         <!-- özgeçmiş başlık satırı -->
+          <div class="row">
+            <div class="container-sm" style="background-color: #C6E6E3;">
+              <i class="fa-solid fa-user" style="color: hsl(336, 60%, 35%);"></i>
+             <h4 style="display: inline-block; margin-left: 6px; margin-top: 6px; padding-top: 2px; color: hsl(336, 60%, 35%);">Özgeçmişim</h4>
+            </div>
+          </div>
+          <hr>
+          <!-- özgeçmiş paragraf -->
+          <div class="row">
+            <div class="container-sm">
+              <p>Lorem ipsum dolor sit quam amet odit ratione laudantium dolores nulla hic? Doloremque vel accusantium accusamus nobis molestias, quae voluptatibus, commodi deleniti laboriosam distinctio, non harum ducimus omnis quaerat. Aperiam, officia fugit. Nam, numquam incidunt sequi dicta mollitia pariatur reiciendis delectus totam ipsum labore accusantium itaque officiis fugiat velit, commodi odio assumenda voluptatibus! Cum impedit eaque asperiores beatae labore modi commodi alias et aperiam explicabo, sed ut laborum voluptatum mollitia deserunt soluta perferendis fugit, perspiciatis iste aliquam, similique veritatis harum provident? Sapiente delectus fugiat asperiores quia. Vel, cum voluptatem cupiditate error aut fugit quae magni iure vero reprehenderit, aliquam facere dolorem quaerat. Iusto quibusdam quos minima ex.</p>
+            </div>
+          </div>
+<!-- eğitim başlık -->
+          <div class="row">
+            <div class="container-sm" style="background-color: #C6E6E3;">
+              <i class="fa-solid fa-graduation-cap" style="color: hsl(336, 60%, 35%);"></i>
+             <h4 style="display: inline-block; margin-left: 6px; margin-top: 6px; padding-top: 2px; color: hsl(336, 60%, 35%);">Eğitim</h4>
+            </div>
+          </div>
+          <hr>
+<!-- eğitim maddeler -->
+          
+          <div class="row">
+            <div class="container-sm">
+              <i class="fa-solid fa-asterisk" style="color: #3d837c;"></i>
+              <p style="display: inline-block;">Şehit Ömer Halisdemir AİHL (Ankara)</p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="container-sm">
+              <i class="fa-solid fa-asterisk" style="color: #3d837c;"></i>
+              <p style="display: inline-block;">Sakarya Üniversitesi Bilgisayar Mühendisliği</p>
+            </div>
+          </div>
+          <br>
+
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
