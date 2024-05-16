@@ -20,6 +20,7 @@ nav {
     width: 100%;
     border-radius: 20px;
     border: 3px solid #BF567D;
+    
 }
 
 nav ul {
@@ -49,8 +50,8 @@ nav ul li a {
     text-decoration: none;
 }
 
-a.secili,
-a:hover {
+nav ul li a.secili,
+nav ul li a:hover {
     text-decoration: none;
     transition: .2s;
     color: hsl(338, 100%, 98%);
@@ -133,6 +134,3 @@ label.baslik {
     }
 }
 
-#navbar {
-    margin-top: 1px;
-}
