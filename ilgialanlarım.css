@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.arama{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+#aramaCubuk{
+    border-radius: 50px;
+    background-color: hsl(336, 42%, 50%);
+    border: 2px solid hsl(338, 47%, 30%);
+    padding-left: 20px;
+    color: #fff;
+    box-sizing: border-box;
+    width: 400px;
+
+}
+#aramaCubuk::placeholder{
+    color: lightgrey;
+}
+.filmler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    
+}
+
+.film {
+    margin: 10px;
+    width: 243px;
+    height: 400px;
+    background-color: hsl(336, 29%, 78%);
+    margin-top: 10px;
+    border: 2px solid hsl(338, 41%, 38%);
+}
+
+.filmKapak {
+    width: 240px;
+    height: 300px;
+}
+
+.bilgi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.filmAdı{
+    font-size: 18px;
+    color: hsl(336, 50%, 23%);
+    margin-right: 10px;
+}
+.puanı{
+    background-color: rebeccapurple;
+    color: #fff;
+    padding: 5px;
+    
+}
