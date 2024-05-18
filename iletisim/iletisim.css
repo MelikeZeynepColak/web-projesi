@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(336, 60%, 35%);
+}
+#iletisim {
+  width: 500px;
+  height: 500px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  
+}
+#iletisim h2{
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#iletisim form{
+  justify-content: center;
+  width: 470px;
+  text-align: center;
+}
+form .input-box{
+  display: flex;
+  justify-content: space-between;
+}
+.input-box .input-field{
+  width: 48.5%;
+}
+.field .item{
+  width: 100%;
+  padding: 18px;
+  background-color: transparent;
+  border: 2px solid hsl(336, 100%, 79%);
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  margin: 12px 0;
+}
+.field .item::placeholder{
+  color: rgba(255, 255, 255, .3);
+}
+.field .error-txt{
+  font-size: 14px;
+  color: #fab5cd;
+  text-align: left;
+  margin: -5px 0 10px;
+  display: none;
+}
+form .textarea-field .item{
+  resize: none;
+}
+form button{
+  padding: 12px 32px;
+  background: #fab5cd;
+  border: none;
+  cursor: pointer;
+  color: hsl(336, 60%, 35%);
+  border-radius: 6px;
+  box-shadow: 0 0 10px #fab5cd;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  outline: none;
+  transition: .5s;
+}
+form button:hover{
+  box-shadow: none;
+}
