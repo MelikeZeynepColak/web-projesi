@@ -8,10 +8,12 @@
     height: 100%;
     width: 100%;
 }
-    
 
 .card{
     margin-bottom: 10px;
     margin-top: 5px
     
+}
+#kartlar{
+    align-items: center;
 }

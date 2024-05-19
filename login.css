@@ -1,4 +1,4 @@
-#login {
+/* #login {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,4 +147,80 @@
 }
 .login-kaydol p a:hover{
     text-decoration: underline;
+} */
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.form-group0 {
+
+    border: solid 1px #eee;
+    padding: 15px 10px;
+}
+
+input {
+    width: 100%;
+    border: solid 1px #eee;
+    padding: 10px 10px;
+}
+
+button {
+    width: 200px;
+    padding: 15px;
+    background: #fff;
+    color: rgb(179, 76, 143);
+    border: solid 1px rgb(179, 76, 143);
+    border-radius: 33px;
+    cursor: pointer;
+    transition: all .38s ease-in-out;
+}
+
+button:hover {
+    background: rgb(179, 76, 143);
+    color: #fff;
+}
+
+table tr td {
+    border: solid 1px #eee;
+    padding: 10px;
+}
+
+.form-group:before {
+    content: " *";
+    color: red;
+}
+
+.container {
+    width: 400px;
+    height: 570px;
+    text-align: center;
+    border: 5px solid rgb(116, 32, 88);
+    justify-content: center;
+    border-radius: 30px;
+    background-color: rgb(255, 236, 244);
+}
+
+.he {
+    text-align: center;
+}
+
+.c1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+

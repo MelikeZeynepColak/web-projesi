@@ -9,16 +9,15 @@ body{
 #iletisim {
   width: 500px;
   height: 500px;
-  margin-top: 30px;
+  margin-top: 10px;
   justify-content: center;
   align-items: center;
-  
 }
 #iletisim h2{
   font-size: 40px;
   color: #fff;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 #iletisim form{
   justify-content: center;
@@ -46,12 +45,47 @@ form .input-box{
 .field .item::placeholder{
   color: rgba(255, 255, 255, .3);
 }
-.field .error-txt{
+.input-box #isimerror{
   font-size: 14px;
   color: #fab5cd;
   text-align: left;
   margin: -5px 0 10px;
-  display: none;
+  
+}
+.input-box #mailerror{
+  font-size: 14px;
+  color: #fab5cd;
+  text-align: left;
+  margin: -5px 0 10px;
+  
+}
+.input-box #soyaderror{
+  font-size: 14px;
+  color: #fab5cd;
+  text-align: left;
+  margin: -5px 0 10px;
+  
+}
+.input-box #telerror{
+  font-size: 14px;
+  color: #fab5cd;
+  text-align: left;
+  margin: -5px 0 10px;
+  
+}
+#mesajerror{
+  font-size: 14px;
+  color: #ffd7e5;
+  text-align: left;
+  margin: -5px 0 10px;
+  
+}
+#gondererror{
+  font-size: 14px;
+  color: #ffd7e5;
+  text-align: left;
+  margin: -5px 0 10px;
+  
 }
 form .textarea-field .item{
   resize: none;
@@ -67,10 +101,12 @@ form button{
   letter-spacing: 1px;
   font-size: 16px;
   font-weight: 600;
-  margin-top: 20px;
   outline: none;
   transition: .5s;
 }
 form button:hover{
   box-shadow: none;
+}
+form .secim{
+  font-size: 40px;
 }

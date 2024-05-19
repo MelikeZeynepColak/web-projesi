@@ -10,8 +10,9 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/giris/giris.css" />
-    <link rel="stylesheet" href="/iletisim/iletisim.css" />
+    <link rel="stylesheet" href="giris.css" />
+
+    <link rel="stylesheet" href="iletisim.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -25,39 +26,42 @@
       </label>
       <label class="baslik">Melike Çolak</label>
       <ul>
-        <li><a href="/giris/index.html">Hakkımda</a></li>
-        <li><a href="/sehrim/sehrim.html">Şehrim</a></li>
-        <li><a href="/ozgecmisim/ozgecmisim.html">Özgeçmişim</a></li>
-        <li><a href="/ilgialanlarım/ilgialanlarim.html">İlgi Alanlarım</a></li>
-        <li><a class="secili" href="/iletisim/iletisim.html">İletişim</a></li>
-        <li><a href="/login/login.html">Giriş Yap</a></li>
+        <li><a href="index.html">Hakkımda</a></li>
+        <li><a href="sehrim.html">Şehrim</a></li>
+        <li><a href="ozgecmisim.html">Özgeçmişim</a></li>
+        <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+        <li><a class="secili" href="iletisim.html">İletişim</a></li>
+        <li><a href="login.html">Giriş Yap</a></li>
       </ul>
     </nav>
 
     <section class="container-fluid" id="iletisim">
       <h2>İletişim</h2>
 
-      <form action="#">
+      <form action="action.php" target="_blank" method="post" id="form">
         <div class="input-box">
           <div class="input-field field">
             <input
               type="text"
+              name="ad"
               placeholder="İsim"
               id="isim"
+              onkeyup="validateName()"
               class="item"
               autocomplete="off"
             />
-            <div class="error-txt">bu alan boş bırakılamaz</div>
+            <div id="isimerror"></div>
           </div>
           <div class="input-field field">
             <input
               type="email"
+              name="email"
               placeholder="E-mail"
               id="mail"
               class="item"
               autocomplete="off"
             />
-            <div class="error-txt">bu alan boş bırakılamaz</div>
+            <div id="mailerror"></div>
           </div>
         </div>
 
@@ -65,24 +69,49 @@
           <div class="input-field field">
             <input
               type="text"
+              name="soyad"
               placeholder="Soyisim"
               id="soyisim"
+              onkeyup="validatesurname()"
               class="item"
               autocomplete="off"
             />
-            <div class="error-txt">bu alan boş bırakılamaz</div>
+            <div id="soyaderror"></div>
           </div>
+
           <div class="input-field field">
             <input
               type="text"
+              name="telno"
               placeholder="Tel No"
               id="Telno"
               class="item"
               autocomplete="off"
             />
-            <div class="error-txt">bu alan boş bırakılamaz</div>
+            <div id="telerror"></div>
           </div>
         </div>
+
+        
+          <div class="input-field field">
+            Kadın:<input
+              type="radio"
+              name="cins"
+              id="cinsk"
+              class="secim"
+              value="Kadın"
+            />
+            Erkek:<input
+              type="radio"
+              name="cins"
+              id="cinse"
+              class="secim"
+              value="Erkek"
+            />
+            <br />
+            
+          </div>
+        
 
         <div class="textarea-field field">
           <textarea
@@ -94,16 +123,15 @@
             class="item"
             autocomplete="off"
           ></textarea>
-          <div class="error-txt">bu alan boş bırakılamaz</div>
+          <div id="mesajerror"></div>
         </div>
 
-        <button type="submit">Gönder</button>
+        <button type="submit" id="submit" name="gonder">Gönder</button>
+        <div id="gondererror"></div>
       </form>
     </section>
 
-    
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="/iletisim/script.js"></script>
+    <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

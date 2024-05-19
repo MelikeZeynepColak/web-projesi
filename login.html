@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melike Zeynep Çolak</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="giris.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+   
+  </head>
+  <body>
+    <div class="container-fluid" id="navbar">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <label class="baslik">Melike Çolak</label>
+        <ul>
+          <li><a href="index.html">Hakkımda</a></li>
+          <li><a href="sehrim.html">Şehrim</a></li>
+          <li><a href="ozgecmisim.html">Özgeçmişim</a></li>
+          <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+          <li><a class="secili" href="login.html">Giriş Yap</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- <div class="container-sm" id="login">
+      <div class="wrapper">
+        
+        <div class="form-boxgiriş">
+          <h2>Login</h2>
+          <hr />
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-lock"></i></span>
+              <input type="password" required />
+              <label>Şifre</label>
+            </div>
+
+            <div class="hatırlama-unutma">
+              <label><input type="checkbox" />Beni Hatırla</label>
+              <a href="#">Şifremi unuttum?</a>
+            </div>
+            <button type="submit" class="btn-light">Login</button>
+
+            <div class="login-kaydol">
+              <p>Hesabın yok mu?<a href="#" class="kaydol-link">Kaydol</a></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-boxkaydol">
+          <h2>Kayıt</h2>
+          <hr />
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-user"></i></span>
+              <input type="text" required />
+              <label>Kullanıcı Adı</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-lock"></i></span>
+              <input type="password" required />
+              <label>Şifre</label>
+            </div>
+
+            <button type="submit" class="btn-light">Login</button>
+
+            <div class="login-kaydol">
+              <p>Hesabın zaten var mı?<a href="#" class="login-link">giriş yap</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> -->
+    
+      <div class="form-boxkaydol">
+        <div class="container">
+          <h2 class="he"><u>Kayıt Formu</u></h2>
+       
+         <form action="login.php" target="_blank" method="POST">
+            <div class="form-group">
+              <b>İsminiz</b>   <input type="text" name="fname" id="fname" required placeholder="isminizi giriniz" pattern="^[A-Z]\w*$"  oninvalid="this.setCustomValidity('Baş harfi büyük olmalı')" onchange="try{setCustomValidity('')}catch(e){}"></input>
+            </div>
+            <div class="form-group">
+              <b>Soyisminiz</b>   <input type="text" name="lname" id="lname"  required placeholder="soyisim giriniz" pattern="^[A-Z]\w*$"  oninvalid="this.setCustomValidity('baş harfi büyük olmalı')" onchange="try{setCustomValidity('')}catch(e){}"></input>
+            </div>
+            <div class="form-group">
+              <b>Mail Adresiniz</b>  <input type="email" name="email" id="email" placeholder="email adresi giriniz"  required oninvalid="this.setCustomValidity('Lütfen doğru biçimde yazınız... abc@gmail.com')" onchange="try{setCustomValidity('')}catch(e){}"></input>
+            </div>
+            <div class="form-group">
+              <b>Şifre</b>  <input type="password" name="pwd" id="pwd" placeholder="şifre giriniz" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z]).{6,10}" title="şifre 6-10 karakter uzunluğunda olup harf harici en az bir rakam ve bir karakter içermelidir"></input>
+            </div>
+            <div class="form-group">
+               <b>Şifreyi Onaylayın</b> <input type="password" name="psw-repeat" id="psw-repeat" placeholder="şifreyi onayla" required>
+            </div>
+           <div class="form-group0">
+              <b>Doğum Tarihi</b> 
+              <input type="date" id="birthday" name="birthday" min="1900-01-01" max="2010-12-31" >
+            </div>
+            <div class="form-group1">
+              <br>
+              <div class="login-kaydol">
+                <p>Hesabın zaten var mı?<a href="#" class="login-link">giriş yap</a></p>
+              </div>
+              <button type="submit">Kaydol</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- <div class="form-boxgiris">
+        <div class="container">
+          <h2 class="he"><u>Registration Form</u></h2>
+       
+         <form action="login.php" target="_blank" method="POST">
+            <div class="form-group">
+              <b>First Name</b>   <input type="text" name="fname" id="fname" required placeholder="Enter first name" pattern="^[A-Z]\w*$"  oninvalid="this.setCustomValidity('Please make first letter of your name as capital')" onchange="try{setCustomValidity('')}catch(e){}"></input>
+            </div>
+            <div class="form-group">
+              <b>Last Name</b>   <input type="text" name="lname" id="lname"  required placeholder="Enter last name" pattern="^[A-Z]\w*$"  oninvalid="this.setCustomValidity('Please make first letter of your name as capital')" onchange="try{setCustomValidity('')}catch(e){}"></input>
+            </div>
+            <div class="form-group">
+              <b>Email Address</b>  <input type="email" name="email" id="email" placeholder="Enter email address"  required oninvalid="this.setCustomValidity('Please give valid format, like @yahoo.com or @gmail.com, etc,.')" onchange="try{setCustomValidity('')}catch(e){}"></input>
+            </div>
+            <div class="form-group">
+              <b>Password</b>  <input type="password" name="pwd" id="pwd" placeholder="Enter new password" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z]).{6,10}" title="Password should be of 6-10 length and should contain atleast one character and one number"></input>
+            </div>
+            <div class="form-group">
+               <b>Confirm Password</b> <input type="password" name="psw-repeat" id="psw-repeat" placeholder="Repeat your password" required>
+            </div>
+           <div class="form-group0">
+              <b>Date Of Birth</b> 
+              <input type="date" id="birthday" name="birthday" min="1900-01-01" max="2010-12-31" >
+            </div>
+            <div class="form-group1">
+              <br>
+              <div class="login-kaydol">
+                <p>Hesabın yok mu?<a href="#" class="kaydol-link">Kaydol</a></p>
+              </div>
+              <button type="submit">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div> -->
+    
+
+
+
+    <script src="login.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
